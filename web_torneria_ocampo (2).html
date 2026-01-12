@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tornería Ocampo | Precisión real en tornería</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --turquesa:#00B8A9;
+      --negro:#0e0e0e;
+      --gris:#2b2b2b;
+      --blanco:#f5f5f5;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      font-family:'Roboto',sans-serif;
+      background:var(--negro);
+      color:var(--blanco);
+      line-height:1.6;
+    }
+    header{
+      position:fixed;
+      top:0;left:0;right:0;
+      background:#000;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:10px 30px;
+      z-index:1000;
+      border-bottom:2px solid var(--turquesa);
+    }
+    header img{height:50px;}
+    header input{
+      padding:8px 12px;
+      border-radius:4px;
+      border:none;
+      outline:none;
+      font-family:'Montserrat';
+    }
+    section{
+      padding:100px 40px 80px;
+      max-width:1200px;
+      margin:auto;
+    }
+    .hero{
+      text-align:center;
+      padding-top:140px;
+    }
+    .hero h1{
+      font-family:'Montserrat';
+      font-size:3rem;
+      color:var(--turquesa);
+      margin-bottom:15px;
+    }
+    .hero p{font-size:1.2rem;max-width:800px;margin:0 auto 30px;}
+    .btn{
+      display:inline-block;
+      background:var(--turquesa);
+      color:#000;
+      padding:15px 30px;
+      font-weight:700;
+      text-decoration:none;
+      border-radius:6px;
+    }
+    h2{
+      font-family:'Montserrat';
+      font-size:2.2rem;
+      color:var(--turquesa);
+      margin-bottom:20px;
+    }
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+    .card{
+      background:var(--gris);
+      padding:25px;
+      border-left:4px solid var(--turquesa);
+    }
+    ul{list-style:none;}
+    ul li{margin-bottom:10px;}
+    .diferencia li{font-size:1.1rem;}
+    .galeria{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:15px;
+    }
+    .galeria div{
+      background:#111;
+      height:180px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#777;
+      font-size:0.9rem;
+    }
+    iframe{width:100%;height:300px;border:0;}
+    footer{
+      background:#000;
+      text-align:center;
+      padding:30px;
+      border-top:2px solid var(--turquesa);
+    }
+    .nota{
+      background:#111;
+      border-left:4px solid var(--turquesa);
+      padding:20px;
+      margin-top:40px;
+      font-style:italic;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo_torneria.jpeg" alt="Tornería Ocampo">
+  <input type="search" placeholder="Buscar...">
+</header>
+
+<section class="hero">
+  <h1>Precisión real en tornería para trabajo pesado</h1>
+  <p>Fabricación y reparación de piezas mecánicas con criterio ingenieril y experiencia de taller.</p>
+  <a class="btn" href="https://wa.me/59173498240" target="_blank">👉 Cotizar por WhatsApp 73498240</a>
+  <p style="margin-top:20px; color:#aaa;">(Foto Taller)</p>
+</section>
+
+<section id="quienes">
+  <h2>¿Quiénes somos?</h2>
+  <p><strong>Tornería Ocampo</strong> es una empresa especializada en la fabricación y reparación de piezas metálicas (acero, bronce, cobre, aluminio, entre otros) con la más alta precisión.</p>
+  <p>Contamos con un equipo altamente capacitado para ofrecer soluciones eficientes en mecanizados industriales.</p>
+  <p><strong>Más de 8 años de experiencia</strong> en el rubro, con calidad y compromiso en cada trabajo, realizados en torno y fresadora.</p>
+  <p>Contáctanos y cotizá tu trabajo.</p>
+</section>
+
+<section id="servicios">
+  <h2>Servicios</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>🔧 Tornería mecánica</h3>
+      <ul>
+        <li>Bujes, ejes, pernos, camisas</li>
+        <li>Ajustes y tolerancias precisas</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>⚙️ Reparaciones industriales</h3>
+      <ul>
+        <li>Botellones hidráulicos</li>
+        <li>Alojamiento de retenes</li>
+        <li>Recuperación de piezas</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>🛠️ Fresado y ajustes</h3>
+      <ul>
+        <li>Ranuras y chaveteros</li>
+        <li>Adaptaciones mecánicas</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>🔥 Soldadura y montaje</h3>
+      <ul>
+        <li>Acero, inoxidable, aluminio</li>
+        <li>Refuerzos y reparaciones</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>🧠 Optimización de piezas</h3>
+      <ul>
+        <li>Mejora de diseños existentes</li>
+        <li>Soluciones a medida</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="diferencia">
+  <h2>¿Qué nos diferencia?</h2>
+  <ul class="diferencia">
+    <li>✔ Trabajo pensado para durar</li>
+    <li>✔ Precisión sin improvisación</li>
+    <li>✔ Experiencia en equipo pesado</li>
+    <li>✔ Soluciones reales, no experimentos</li>
+    <li>✔ Atención directa con el taller</li>
+  </ul>
+</section>
+
+<section id="galeria">
+  <h2>Galería real</h2>
+  <div class="galeria">
+    <div>Antes / Después</div>
+    <div>Bujes</div>
+    <div>Botellones</div>
+    <div>Ejes</div>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Ubicación y contacto</h2>
+  <p>📍 Tarija – Bolivia</p>
+  <p>📲 WhatsApp directo: 73498240</p>
+  <p>📞 Llamada directa</p>
+  <p>🕒 Horarios reales</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.734118276!2d-64.7126621!3d-21.5224444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x940637004bf2c12f%3A0xadfff449f94e70e!2sTORNERIA%20OCAMPO!5e0!3m2!1ses!2sbo!4v1736370000000" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section>
+  <h2>Identidad</h2>
+  <p><strong>Precisión real, soluciones mecánicas inteligentes para el trabajo pesado diario.</strong></p>
+  <div class="nota">Cada trabajo es evaluado con criterio técnico y experiencia práctica. Si una pieza no conviene reparar, lo decimos.</div>
+</section>
+
+<footer>
+  <p>© Tornería Ocampo – Tarija, Bolivia</p>
+</footer>
+
+</body>
+</html>
